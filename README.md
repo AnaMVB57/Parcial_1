@@ -6,6 +6,10 @@ Repositorio del parcial 1
 Página oficial de La fábrica de chocolate de Willy Wonka
 =======
 Primer examen de Lenguajes de programación II
+
+
+
+
 Landing Page
 Un cliente que presta servicios (de lo que ustedes deseen) los ha contratado para
 que desarrollen una página web con los siguientes requisitos:
