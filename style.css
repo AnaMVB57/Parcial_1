@@ -1,7 +1,12 @@
-*{ /*    */
+*{ 
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+:root{ /*   Declaración de variables    */
+
+    --prin-purple:rgb(76,45,137);
 }
 
 /*______________________________________________________________________________________________________________________________________________*/
@@ -9,41 +14,40 @@
 
 body{
     width: 100vw;
-    /*background-color: rgb(76,45,137);*/
-}
-/*______________________________________________________________________________________________________________________________________________*/
-
-
-
-.contenedor-principal {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 5rem;
-    justify-content: space-around;
-    align-items: right;
+    font-family: 'Times New Roman', Times, serif; 
+    color: white;
 }
 
-/*______________________________________________________________________________________________________________________________________________*/
-/*___________________TITULO_LOGO_____________________________________________________________________________________________________________________*/
-
-.titulo-logo img{
-    width: 90%;
-    height: 50%; 
-}
 
 /*______________________________________________________________________________________________________________________________________________*/
 /*___________________HEADER_____________________________________________________________________________________________________________________*/    
 
 .header{
     position: fixed;
-    top: 0;
     display: flex;
     height: 10rem;
     width: 100%;
     justify-content: space-between; 
-    background-color: var(--background-principal);
-    border: 2px solid rgb(76,45,137);
+    background: linear-gradient(to right, black, var(--prin-purple));
+}
+
+/*______________________________________________________________________________________________________________________________________________*/
+/*___________________TITULO_LOGO_____________________________________________________________________________________________________________________*/
+
+.logo{
+    padding-left: 2.5rem;
+}
+
+.logo img{ /*   Imagen de la clase "logo"   */
+    height: 75%;
+    display: block;
+    padding-left: 4rem;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+
 }
 
 /*______________________________________________________________________________________________________________________________________________*/
@@ -53,9 +57,8 @@ body{
     display: flex;
     justify-content: space-around;
     height: 100%;
-    width: 30vw;
+    width: 50vw;
     background-color: var(--background-principal);
-    border: 2px solid red;
     align-items: center; 
 }
 
@@ -65,28 +68,48 @@ body{
     color: black; /*   Color de la letra   */
     font-weight: 900;/*   Texto en negrilla   */
     text-decoration: none; /*   Se le quita el subrayado */
+    color: white;
+    border-radius: 30%;
 }
 
+.navbar a:hover{ /*  Efectos para los botones   */
+    color: grey; /* Cambia de color a las letras del botón  */
+    transform: scale(1.25); /*   Agranda el botón al ser señalado con el mouse   */
+}
+
+/*______________________________________________________________________________________________________________________________________________*/
+/*___________________LINKS_____________________________________________________________________________________________________________________*/
+
 .link {
+    font-size: 18px;
     display: inline;
-    border: 2px solid rgb(76,45,137);
 }
 
 .link-img img{/*  Afecta a las clases "link" con una img dentro   */
     width: 2rem;
     height: 2rem;
-    border: 2px solid rgb(76,45,137);
+}
+
+.link:hover{
+    box-shadow: 0 0 2rem black;
+    cursor: pointer;
+}
+
+.link-img:hover{
+    box-shadow: 0 0 2rem black;
+    cursor: pointer;
 }
 
 /*______________________________________________________________________________________________________________________________________________*/
 /*___________________BTN-WHATSAPP_____________________________________________________________________________________________________________________*/
 
 .btn-whatsapp{
-position: fixed;
-bottom: 5rem;
-right: 5rem;
-width: 5rem;
-height: 5rem;
+    position: fixed;
+    bottom: 2.5rem;
+    right: 2.5rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 3rem;
 }
 
 .btn-whatsapp img{ /* Imagen del botón */
@@ -94,9 +117,13 @@ height: 5rem;
     width: 100%;
 }
 
+.btn-whatsapp:hover{
+    box-shadow: 0 0 2rem black;
+    cursor: pointer;
+}
+
 /*______________________________________________________________________________________________________________________________________________*/
 /*___________________SECCIONES_____________________________________________________________________________________________________________________*/
-
 
 section{ 
     width: 100vw;
@@ -104,25 +131,173 @@ section{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background: linear-gradient(to right, black, var(--prin-purple));
+    padding: 4rem;   
 }
 
 /*______________________________________________________________________________________________________________________________________________*/
 /*___________________SECCIÓN 1_____________________________________________________________________________________________________________________*/
 
-.s1 img{ /* Imagen de la sección 1 */
-    width: 30%;
-    height: 30%;
-    border-radius: 3rem;
+.s1{
+    padding-top: 15rem;
 }
+
+.s1 img{ /* Imagen de la sección 1 */
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    align-items: center;
+
+}
+
+.s1-titulo{
+    padding-left: 15rem;
+
+}
+
+.s1-t1{
+    padding-top: 2.5rem;
+    padding-right: 5rem;
+    
+}
+
+/*______________________________________________________________________________________________________________________________________________*/
+/*___________________SECCIÓN 2_____________________________________________________________________________________________________________________*/
+
+
+.s2-servicios{ /*   Titulo Servicios   */
+    margin: 0 auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    flex-basis: 100%px;
+    padding: 4rem;
+}
+
+.cont-1{
+
+display: flex;
+
+}
+
+.s2-cont1{
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid white;
+    
+}
+
+.cont-2{
+    display: flex;
+    
+}
+    
+.s2-cont2{
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid white;
+
+}
+
+
+
+.s2-h1{ /*   Titulo del contenedor   */
+    margin: 0 auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    flex-basis: 100%px;
+}
+
+/*______________________________________________________________________________________________________________________________________________*/
+/*___________________SECCIÓN 3_____________________________________________________________________________________________________________________*/
+
+.s3{  
+padding: 4rem;
+}
+
+.tit-s3{ /*Titulo sección 3*/
+    margin: 0 auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    flex-basis: 100%px;
+}
+
+.circulo{
+    
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%; 
+    overflow: hidden; 
+    border: 2px solid #333; 
+}
+
+.circulo img{ /*  Config de la imagen contenida en el círculo   */
+    max-width: 100%;
+    height: auto; 
+    display: block;
+}
+
+.cont-colab{
+    display: flex;
+}
+
+.c { /*  Div que contiene los títulos, imagen y texto   */
+    flex: 1;
+    margin: 10px;
+    padding: 4rem;
+    border: 1px solid white;
+}
+
+.nombre{ /*  Nombre de los colaboradores   */
+    border: 2px solid white;
+    margin: 0 auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    flex-basis: 100%px;    
+    
+}
+
+.cargo{ /*  Cargo de los colaboradores   */
+    color: white;
+    text-align: center;
+}
+
 
 /*______________________________________________________________________________________________________________________________________________*/
 /*___________________FOOTER_____________________________________________________________________________________________________________________*/
 
-.cont-footer{
+footer{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    height: 10rem;
+    padding-left: 25rem;
+    height: 5rem;
     width: 100%;
-    border: 2px solid rgb(76,45,137);
+    border: 2px solid white;
+    background: linear-gradient(to right, black, var(--prin-purple));
+}
+
+.link-h img{/*  Afecta a las clases "link" con una img dentro   */
+    width: 2rem;
+    height: 2rem;
+    gap:10px;
+}
+
+.link-h:hover{
+    box-shadow: 0 0 2rem black;
+    cursor: pointer;
+    transform: scale(1.25);
 }
