@@ -165,6 +165,13 @@ section{
 /*___________________SECCIÓN 2_____________________________________________________________________________________________________________________*/
 
 
+.crearServicio{
+
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid white;
+}
+
 .s2-servicios{ /*   Titulo Servicios   */
     margin: 0 auto;
     flex-direction: row;
