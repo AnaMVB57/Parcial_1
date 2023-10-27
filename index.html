@@ -6,9 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Página oficial de La fábrica de chocolate de Willy Wonka">
     <link rel="icon" type="image/png" href="images/Wonka-Logo-500x281.png">
+
     <title>La fábrica de chocolate de Willy Wonka</title>
-    <link rel="stylesheet" href="style.css"/>
-    <script src="JS/s2.js" defer></script>
+
+    <!--- Importamos el archivo style.css para modificar los estilos --->
+    <link rel="stylesheet" href="CSS/style.css"/>
+    <link rel="stylesheet" href="CSS/modal.css"/>
+
+    <!--- Importamos el archivo main.js como un módulo --->
+    <script src="JS/main.js" type="module"></script>
 </head>
 <body>
 
@@ -26,9 +32,10 @@
             <!--Botones del navbar y a dónde están redireccionados-->
                 <a href="#s1" class="link">Home
                 </a>
-                <a href="#s2" class="link">Servicios
+                <button class="link" id="boton-vermas">Ver más</button>
+                <a href="#s2" class="link ocultar" id="a2">Servicios
                 </a>
-                <a href="#s3" class="link">Colaboradores
+                <a href="#s3" class="link ocultar" id="a3">Colaboradores
                 </a>
                 <a href="#footer" class="link-img">
                     <img src="images/down.png">
@@ -75,56 +82,24 @@
     </section>
    
     <!----------------------------Sección 2------------------------------>
-    <section class="s2"  id="s2">
+    <section id="s2" class="ocultar">
 
-    <!--------------- Contenedor principal ------------------>
-
-    <div class="cont-principal">
+        <h2>Servicios</h2>
 
         <div class="s2-servicios">
-                    <h1>Servicios</h1>
-        </div>
-   
 
-    </div>
+        </div>
 
     </section>
 
     
     <!--------------------------------Seccion 3---------------------------------->
-    <section class="s3"  id="s3">
+    <section  id="s3" class="ocultar">
 
-        <div class="cont-s3">
+        <h2>Colaboradores</h2>
 
-        <h2 class="tit-s3">Colaboradores</h2>
-        
-            <div class="cont-colab">
-                
-                <div class="c">
-                    <div class="circulo">
-                        <img src="images/oompa-loompa.jpg" alt="">
-                    </div>
-                        <h2 class="nombre">Oompa Loompas</h2>
-                                <p class="cargo">Operadores de la fábrica</p>
-                </div>
+        <div class="s3-colaboradores">
 
-                <div class="c">
-                    <div class="circulo">
-                        <img src="images/willy-wonka.jpg" alt="">
-                    </div>
-                        <h2 class="nombre">Willy Wonka</h2>
-                            <p class="cargo">Dueño de la fábrica</p>
-                </div>
-
-                <div class="c">
-                    <div class="circulo">
-                        <img src="images/charlie.jpg" alt="">
-                    </div>
-                        <h2 class="nombre">Charlie Bucket</h2>
-                                <p class="cargo">Heredero de la fábrica</p>
-                </div>
-
-            </div>
         </div>
 
     </section>
